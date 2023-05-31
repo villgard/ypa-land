@@ -1,0 +1,25 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 87px;
+
+  &__list {
+    max-width: 1116px;
+    width: 100%;
+    border-top: 1px solid rgba($black, .7);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .advantages {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .advantages {
+    gap: 25px;
+  }
+}

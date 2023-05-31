@@ -1,0 +1,73 @@
+.descriptor {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 90px;
+  @include text_descriptor;
+  text-transform: uppercase;
+  color: $black;
+  background-color: $grey;
+  border: 1px solid $black;
+}
+
+.link {
+  @include text_link_2;
+  color: $black;
+  opacity: .6;
+
+  &._underline {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  &:visited {
+    color: $ultramarine;
+
+    svg {
+      path {
+        stroke: $ultramarine;
+      }
+    }
+  }
+  &:hover {
+    opacity: 1;
+    color: $black;
+    svg path {
+      stroke: $black;
+    }
+  }
+  &.secondary {
+    @include text_link_1;
+  }
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.subtitle-text {
+  @include text_big;
+  color: $black;
+  text-indent: 280px;
+}
+
+@media screen and (max-width: 992px) {
+  .descriptor {
+    padding: 6px 19px;
+    @include text_caption;
+
+  }
+
+  .subtitle-text {
+    text-indent: 100px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .descriptor {
+    padding: 5px 14px;
+  }
+
+  .subtitle-text {
+    text-indent: 60px;
+  }
+}

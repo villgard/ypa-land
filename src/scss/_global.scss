@@ -1,0 +1,45 @@
+@import 'vars';
+html {
+    width: 100%;
+    font-family: $main-font;
+    color: $black;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    overflow-x: hidden;
+    color: $black;
+    background: $grey;
+    &.fixed-body {
+        overflow-y: hidden;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto 160px;
+    padding: 0 20px;
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 639px) {
+        margin-bottom: 70px;
+        padding: 0 10px;
+    }
+}
+

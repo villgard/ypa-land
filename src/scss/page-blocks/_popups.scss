@@ -1,0 +1,170 @@
+@import "../mixins";
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 80;
+    opacity: 0;
+    pointer-events: none;
+    &__bg {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        inset: 0;
+        z-index: 2;
+        background: rgba(29, 29, 29, 0.5);
+        backdrop-filter: blur(15px);
+    }
+    &--active {
+        opacity: 1;
+        pointer-events: unset;
+        .modal__bg {
+            display: block;
+        }
+    }
+    &__dialog {
+        position: relative;
+        z-index: 3;
+    }
+    &__inner {
+        width: 588px;
+        padding: 45px 25px 45px 45px;
+        background: $grey;
+        border-radius: 40px;
+    }
+    &__close{
+        position: absolute;
+        z-index: 11;
+        top: 0;
+        right: -110px;
+        width: 70px;
+        background-color: transparent;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__title {
+        max-width: 482px;
+        width: 100%;
+        @include headline__footer;
+        text-transform: uppercase;
+        color: $black;
+
+        span {
+            display: block;
+        }
+
+        span:nth-child(2) {
+            text-align: right;
+        }
+
+        &-sent {
+            margin-top: 140px;
+            margin-bottom: 264px;
+            display: flex;
+            justify-content: center;
+            gap: 23px;
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            svg {
+                width: 101px;
+
+            }
+        }
+    }
+
+    &__subtitle {
+        max-width: 321px;
+        text-transform: uppercase;
+        @include title_3;
+    }
+
+    &__form {
+        margin-top: 70px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        max-width: 264px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal {
+        &__dialog {
+            position: absolute;
+            top: 158px;
+            left: 20px;
+        }
+        &__inner {
+            width: 433px;
+            padding: 46px 20px;
+        }
+
+        &__title {
+            max-width: 317px;
+            &-sent {
+                margin: 84px 0 246px 10px;
+                gap: 14px;
+
+                svg {
+                    width: 63px;
+                }
+            }
+        }
+        &__subtitle {
+            max-width: 240px;
+            margin-left: 10px;
+        }
+        &__close {
+            position: fixed;
+            top: 158px;
+            right: 20px;
+            width: 50px;
+        }
+
+        &__btn {
+            max-width: 100%;
+        }
+        &__form {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .modal {
+        &__dialog {
+            top: 130px;
+            left: 0;
+        }
+        &__inner {
+            width: 100vw;
+        }
+        &__title {
+            font-size: 87px;
+            &-sent {
+                margin: 75px 0 240px;
+                gap: 12px;
+            }
+        }
+        &__subtitle {
+            max-width: 182px;
+        }
+        &__close {
+            top: 82px;
+            width: 38px;
+        }
+        &__form {
+            margin-top: 40px;
+        }
+    }
+}

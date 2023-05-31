@@ -1,0 +1,66 @@
+.team__slider {
+  &-wrapper {
+    position: relative;
+  }
+  &-thumbnails {
+    position: absolute;
+    overflow: hidden;
+    top: 550px;
+    left: 852px;
+    max-width: 1116px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .swiper-slide-thumb {
+    cursor: pointer;
+    transition: all .4s;
+
+    &-active {
+      opacity: 0;
+      max-width: 0;
+    }
+  }
+
+
+  &-thumbnail {
+    max-width: 264px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: transparent;
+    opacity: 1;
+    user-select: none;
+
+    &-name {
+      @include title_4;
+      margin-bottom: 7px;
+    }
+
+    &-position {
+      text-transform: uppercase;
+      @include text_caption;
+      opacity: 0.5;
+    }
+
+    &-img {
+      max-width: 100%;
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+        border-radius: 40px;
+      }
+    }
+ }
+}
+
+@media screen and (max-width: 992px) {
+  .team__slider-thumbnails {
+    visibility: hidden;
+    display: none;
+    left: 20px;
+  }
+}

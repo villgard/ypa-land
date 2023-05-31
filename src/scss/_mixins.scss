@@ -1,0 +1,210 @@
+@import "vars";
+
+@mixin font-face($name, $file, $weight: 400, $style: normal) {
+    @font-face {
+        font-family: "#{$name}";
+        src: url('../fonts/#{$file}.ttf') format('ttf'),
+        url('../fonts/#{$file}.woff2') format('woff2');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
+@mixin title_2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    @media screen and (max-width: 992px) {
+        font-size: 28px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 24px;
+    }
+}
+
+@mixin title_3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    @media screen and (max-width: 992px) {
+        font-size: 22px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 17px;
+    }
+}
+
+@mixin title_4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+    @media screen and (max-width: 992px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 14px;
+    }
+}
+
+@mixin text_big {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 110%;
+    @media screen and (max-width: 992px) {
+        font-size: 35px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 20px;
+    }
+}
+
+@mixin text_main {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    @media screen and (max-width: 992px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 13px;
+    }
+}
+
+@mixin text_small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 11px;
+    }
+}
+
+@mixin text_num {
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    @media screen and (max-width: 992px) {
+        font-size: 78px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 45px;
+    }
+}
+
+@mixin text_descriptor {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    @media screen and (max-width: 992px) {
+        font-size: 115px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 65px;
+    }
+}
+
+@mixin text_link_menu {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    @media screen and (max-width: 992px) {
+        font-size: 56px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 35px;
+    }
+}
+
+@mixin text_button_circle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    @media screen and (max-width: 992px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 12px;
+    }
+}
+
+@mixin text_button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+@mixin text_link_1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+@mixin text_link_2 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 110%;
+}
+
+@mixin text_form {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+@mixin headline__footer {
+    font-weight: 500;
+    font-size: 140px;
+    line-height: 100%;
+    @media screen and (max-width: 992px) {
+        font-size: 87px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 49px;
+    }
+}
+
+@mixin ticker {
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 30px;
+    @media screen and (max-width: 992px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 12px;
+    }
+}
+
+@mixin text_caption {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 10px;
+    }
+}
+
+
+
+
+@mixin tile {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 101%;
+    @media screen and (max-width: 992px) {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 110%;
+    }
+    @media screen and (max-width: 639px) {
+        font-size: 20px;
+    }
+}
+

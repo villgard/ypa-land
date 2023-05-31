@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+@@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Your Perconal Agent Technology", "description":"", "keywords":"",})
+
+<body class="page">
+    <div class="wrapper">
+        <header id="top" class="header container">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="main content">
+            <section class="cover container">
+                <h1 class="cover__title">
+                    <span class="js-cover-text stroke">We are</span>
+                    <span class="js-cover-text">Your</span>
+                    <span class="js-cover-text">Personal</span>
+                    <span class="js-cover-text">Agents</span>
+                    <span class="js-cover-text stroke">crew.</span>
+                </h1>
+                <p class="cover__subtitle subtitle-text">Мы команда частных рекрутеров. Профессиональный подбор сотрудников для вашей компании в короткие сроки.</p>
+                <button class="cover__cta js-cta-button button button__circle button__circle-light"><span>оставить заявку</span></button>
+            </section>
+            <section id="service" class="service container">
+                <h2 class="descriptor"><span>услуги</span></h2>
+                <ul class="service__list">
+                    <li class="service__item service__item-xl">
+                        <div class="service__item-summary">
+                            <h3>точечный подбор</h3>
+                            <p>от 65% месячного оклада специалиста</p>
+                        </div>
+                        <div class="service__item-details">
+                            Подбор узконаправленных и высококвалифицированных специалистов. CPO, CTO, Team Leads, CFO и другие специалисты, готовые помочь Вашему бизнесу.
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <div class="service__item-summary">
+                            <h3>пакет подбора</h3>
+                            <p>от 200 000 руб</p>
+                        </div>
+                        <div class="service__item-details">
+                            Подбор необходимого количества сотрудников по фиксированной цене. В нужном профиле — Sales, Support, Developers, Designers.
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <div class="service__item-summary">
+                            <h3>HR подписка</h3>
+                            <p>от 250 000 руб/мес</p>
+                        </div>
+                        <div class="service__item-details">
+                            Подписка на полный спектр HR сопровождения: найм, onboarding, адаптация, корпоративная культура и все все все.
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <button class="service__cta js-cta-button button button__light">Запросить консультацию</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="about container">
+                <h2 class=" about__title descriptor"><span>о нас</span></h2>
+                <p class="about__subtitle subtitle-text">Не просто находим, а делаем все, чтобы наиболее подходящий кандидат стал сотрудником вашей компании.</p>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <span class="about__item-out" >0<span id="out-1">3</span></span>
+                        <span class="about__item-text">компании в формате “полного сопровождения”</span>
+                    </li>
+                    <li class="about__item">
+                        <span class="about__item-out" >0<span id="out-2">5</span></span>
+                        <span class="about__item-text">направлений — Mobile Dev, Data Science, HR, C-level, Analytics, Web Development</span>
+                    </li>
+                    <li class="about__item">
+                        <span class="about__item-out"><span id="out-3">100</span>+</span>
+                        <span class="about__item-text">специалистов, которые отработали на проектах не менее одного года</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="advantages container">
+                <h2 class="descriptor"><span>Преимущества</span></h2>
+                <ul class="advantages__list">
+                    @@include('components/cards/_advantages-tab.html',{"image":"advantages_01.svg","title":"погружение в компанию","text":"Нам очень важно познакомиться с командой, чтобы понимать какие Soft Skills кандидата будут приемлемы. «Что для одного токсичность, для другого просто доброе утро».",})
+                    @@include('components/cards/_advantages-tab.html',{"image":"advantages_02.svg","title":"команда под идею","text":"Если у вас есть идея, но нет людей для ее реализации — мы подберем подходящих специалистов.",})
+                    @@include('components/cards/_advantages-tab.html',{"image":"advantages_03.svg","title":"бесплатная консультация","text":"По всем вопросам. При необходимости мы помогаем выстроить внутренние процессы подбора и адаптации персонала, что значительно облегчает масштабирование команды.",})
+                    @@include('components/cards/_advantages-tab.html',{"image":"advantages_04.svg","title":"наличие гарантий","text":"Если кандидат в течение 2 месяцев после начала работы не подошел Вашей компании, мы подберем другого специалиста.",})
+
+                </ul>
+            </section>
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__inner">
+                        <div class="banner__content">
+                            <p class="banner__text">
+                                <span>Cкидка 20&nbsp;% на&nbsp;наши услуги.</span>
+                                <span>На “Точечный подбор” от 5 сотрудников в месяц</span>
+                            </p>
+                            <div class="banner__btn-wrapper">
+                                <button class="banner__btn button button__dark js-cta-button">оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="team" class="team container">
+                <h2 class="team__title descriptor"><span>Команда</span></h2>
+                <p class="team__subtitle subtitle-text"><span>Your Personal Agent — </span><span>ваши персональные</span> агенты и представители на обширном IT рынке. Наш главный принцип — соблюдение интересов сотрудников и компаний.</p>
+                <p class="team__caption">Каждый из нас более 5 лет занимается рекрутингом IT специалистов широкого профиля: от junior mobile developer до специалистов C-level.Сейчас мы объединились в команду, которая выходит на рынок с накопленным опытом, чтобы помогать компаниям пополнять свои ряды нужными им специалистами в кратчайшие сроки и грамотно выстраивать корпоративную культуру.</p>
+                    <div class="team__slider js-swiper-team">
+                        <div class="swiper-wrapper">
+                            @@include('components/cards/_team-card.html',{"image":"team_01","name":"Владислав Санников","position":"Founder","quote":"Более 5 лет в HR. Разносторонний опыт в подборе сотрудников: от sales manager до CTO."})
+                            @@include('components/cards/_team-card.html',{"image":"team_02","name":"Валерия Полугодина","position":"Middle IT Recruiter","quote":"1,5 года в IT рекрутинге. Люди — это мой источник вдохновения. Общение с ними заряжает меня на написание картин."})
+                            @@include('components/cards/_team-card.html',{"image":"team_03","name":"Алсу Сафина","position":"Junior IT Recruiter / UI/UX Designer","quote":"1 год в IT рекрутинге. И стильный интерфейс создать, и подходящего сотрудника подобрать — могу, умею, практикую."})
+                            @@include('components/cards/_team-card.html',{"image":"team_04","name":"Андрей Арбузов","position":"Lead Recruiter","quote":"3 года в IT рекрутинге. Знаю,<br> где найти того, кто Вам нужен."})
+                            @@include('components/cards/_team-card.html',{"image":"team_05","name":"Григорий Гимубрг","position":"Sourcer","quote":"3 года в IT рекрутинге.<br> Я просто умею искать."})
+                        </div>
+                    </div>
+                    <div class="team__slider-thumbnails js-swiper-thumbnails">
+                        <div class="swiper-wrapper">
+                            @@include('components/cards/_team-thumbnail.html',{"image":"team_01","name":"Владислав Санников","position":"Founder"})
+                            @@include('components/cards/_team-thumbnail.html',{"image":"team_02","name":"Валерия Полугодина","position":"Middle IT Recruiter"})
+                            @@include('components/cards/_team-thumbnail.html',{"image":"team_03","name":"Алсу Сафина","position":"Junior IT Recruiter / UI/UX Designer"})
+                            @@include('components/cards/_team-thumbnail.html',{"image":"team_04","name":"Андрей Арбузов","position":"Lead Recruiter"})
+                            @@include('components/cards/_team-thumbnail.html',{"image":"team_05","name":"Григорий Гимубрг","position":"Sourcer"})
+                        </div>
+                    </div>
+            </section>
+            <section id="process" class="process container">
+                <h2 class="process__title descriptor"><span>Процесс работы</span></h2>
+                <p class="process__subtitle subtitle-text"><span>Мы стараемся</span><span>по максимуму</span> сократить время подбора, поэтому не внедряем большого количества этапов на старте.</p>
+                <div class="process__inner">
+                    <ul class="process__logos">
+                        @@include('components/cards/_y-letter.html')
+                        @@include('components/cards/_y-letter.html')
+                        @@include('components/cards/_y-letter.html')
+                        @@include('components/cards/_y-letter.html')
+                        @@include('components/cards/_y-letter.html')
+                    </ul>
+                    <ul class="process__list">
+                        @@include('components/cards/_process-tab.html',{"index":"01","title":"снятие заявки","text":"Довольно стандартный и шаблонный процесс. В ходе него мы составляем профиль кандидата, профиль вакансии, профиль компании, расспрашиваем вас о команде и о том, как выглядит рабочий процесс. Чаще всего проводим этот этап с нанимающим менеджером (им может быть старший специалист, Team Lead, CTO или любой участник команды, отвечающий за текущий найм)."})
+                        @@include('components/cards/_process-tab.html',{"index":"02","title":"Первичный отбор кандидатов","text":"Получив всю необходимую информацию на первом этапе, мы начинаем первичный отбор кандидатов по нашей базе, вакансиям и базам резюме. По его итогам присылаем вам от 3-х до 5-ти резюме кандидатов, чтобы удостовериться, что они подходят под запрос."})
+                        <li class="process__item js-accordion accordion">
+                            <div class="process__item-header js-accordion-header-2 accordion__header">
+                                <p class="process__item-title accordion__title">
+                                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H19V19" stroke="#1D1D1D"/>
+                                        <path d="M19 1L1 19" stroke="#1D1D1D"/>
+                                    </svg>
+                                    <span>Предоставление кандидатов</span>
+                                    <span>03</span>
+                                </p>
+                                <div class="process__item-content accordion__content js-accordion-content">
+                                    <p class="process__item-text">
+                                        На этом этапе возможны два сценария:
+                                    </p>
+                                    <ul>
+                                        <li>Мы присылаем Вам подходящие резюме кандидатов до общения с ними, чтобы вы могли выбрать интересных кандидатов из большего количества соискателей.</li>
+                                        <li>Мы присылаем Вам кандидатов, которые прошли нашу первичную оценку и ознакомительное интервью. В данном случае поток кандидатов будет меньше, но вы получите полную картину по каждому из них.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        @@include('components/cards/_process-tab.html',{"index":"04","title":"Технический этап","text":"Этот этап мы проводим совместно с вами. Назначаем и контролируем процесс прохождения технического собеседования кандидата с нанимающим специалистом. Снимаем с вас всю боль по планированию и ведению техзвонка."})
+                        @@include('components/cards/_process-tab.html',{"index":"05","title":"Выход кандидата","text":"При необходимости собираем у кандидата все необходимы документы и контролируем его выход на работу. После этого этапа в течении двух месяцев собираем фидбек от вас и кандидата о ходе адаптации и всех возникающих вопросах."})
+                    </ul>
+                </div>
+            </section>
+            <section id="feedback" class="feedback container">
+                <h2 class="feedback__title descriptor"><span>Отзывы клиентов</span></h2>
+                <div class="feedback__inner">
+                    <p class="feedback__name js-feedback-animated"><a href="#">SapphireBet</a></p>
+                    <p class="feedback__name js-feedback-animated"><a href="https://friendsonly.me/">FriendsOnly</a></p>
+                    <p class="feedback__name js-feedback-animated"><a href="#">Easy-X</a></p>
+                    <p class="feedback__name js-feedback-animated"><a href="https://mentalgrowth.app/" target="_blank">Mental Growth</a></p>
+                    <p class="js-feedback-animated">
+                        <button class="feedback__cta button button__circle button__circle-dark js-cta-button"><span>стать клиентом</span></button>
+                    </p>
+                </div>
+                <ul class="feedback__list">
+                    <li class="feedback__item">
+                        <div class="feedback__info">
+                            <div class="feedback__item-img">
+                                <img src="img/feedback_01.png" alt="">
+                            </div>
+                            <div>
+                                <p class="feedback__item-name">Александр Копачев</p>
+                                <p class="feedback__item-position">CTO Mental Growth </p>
+                            </div>
+                        </div>
+                        <p class="feedback__review">
+                            Начали работать с YPA по рекомендации знакомых. Понравилась скорость работы и подход. За 3-4 дня нашли нам сильного Swift разработчика. Будем работать дальше!
+                        </p>
+                    </li>
+                    <li class="feedback__item">
+                        <div class="feedback__info">
+                            <div class="feedback__item-img">
+                                <img src="img/feedback_02.png" alt="">
+                            </div>
+                            <div>
+                                <p class="feedback__item-name">Максим Ковалев</p>
+                                <p class="feedback__item-position">Founder of FriendsOnly.me</p>
+                            </div>
+                        </div>
+                        <p class="feedback__review">
+                            Все очень круто! Уже давно работаем с ребятами не только в вопросах найма. Начинали с ними еще на стадии MVP и ребята собрали нам львиную долю команды.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="blog" class="blog container">
+                <h2 class="descriptor"><span>Блог</span></h2>
+                <div class="blog__slider js-swiper-blog">
+                    <div class="swiper-wrapper">
+                        @@include('components/cards/_blog-card.html',{"image":"blog_01","title":"С чем его едят, этот ваш IT рекрутинг?","date":"Март 13, 2023","preview":"Есть запрос — найти сотрудника. Компания абсолютно спокойно, не прибегая к помощи рекрутера, может с этим запросом справиться. Всего-то нужно разместить вакансию на специальном сайте(благо сейчас таких хватает), подождать пару дней и с довольным лицом выбирать себе сотрудника из откликнувшихся. Ну что в этом сложного?...","link":"https://vc.ru/u/1578780-vladislav-sannikov-x-ypa/633324-s-chem-ego-edyat-etot-vash-it-rekruting"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_02","title":"«Добрый день! Есть вакансия с Вашим стэком. Интересно?».","date":"Март 14, 2023","preview":"Столкнувшись с ситуацией, при которой вы решаетесь на смену работы, не лишним будет актуализировать для себя состояние рынка. За то время, что вы были трудоустроены, много чего могло поменяться. В данной ситуации не лишним было бы иметь 2-3 знакомых рекрутеров, с которыми можно пообщаться и узнать, что вообще сейчас происходит...","link":"https://vc.ru/u/1578780-vladislav-sannikov-x-ypa/634537-dobryy-den-est-vakansiya-s-vashim-stekom-interesno-ili-zachem-razrabotchiku-obshchatsya-s-rekruterom"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_03","title":"Как написать привлекательное резюме по версии YPA.","date":"Март 15, 2023","preview":"Если говорить о наполнении резюме, то мой главный совет для соискателей всегда один: сформулируйте в первую очередь для себя, чем вы хотите заниматься и чем можете быть полезны компании. Нужно понимать, что, при открытии вакансии, компания в первую очередь испытывает потребность в закрытии той или иной болевой точки...","link":"https://vc.ru/hr/635679-kak-napisat-privlekatelnoe-rezyume-po-versii-ypa"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_04","title":"Карьерные консультации: помощь на распутии или проблемы белых людей?","date":"Март 20, 2023","preview":"Давайте для начала разберемся в происхождении проблемы. Как мы все знаем, спрос рождает предложение. Если бы в какой-то момент времени в большой массе людей не начала возникать потребность в наставлении на путь истинный в карьере, то я бы сейчас писал о другом, а вы не задавались подобным вопросом. Так что опережая...","link":"https://vc.ru/hr/638157-karernye-konsultacii-pomoshch-na-rasputii-ili-problemy-oslepitelno-belyh-lyudey"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_05","title":"Кто нанимает вас на работу? HRD, HRBP и прочие непонятные буковки.","date":"Март 22, 2023","preview":"Всем привет! Снова на связи Владислав из YPA. На следующую неделю я готовлю вам первую статью из новой рубрики «ВОТ ВАМ КЕЙС», в которой буду общаться с различными интересными личностями из индустрии, допрашивать их о карьерном пути и подробно разбирать один из кейсов в их практике. В конце концов, сколько...","link":"https://vc.ru/u/1578780-vladislav-sannikov-x-ypa/642790-kto-nanimaet-vas-na-rabotu-hrd-hrbp-i-prochie-neponyatnye-bukovki"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_06","title":"«Сейчас я тебе все объясню, сынок!» или зачем менторство ментору.","date":"Март 29, 2023","preview":"Ни для кого не секрет, что академические знания, получаемые в университете, штука может быть и полезная, но крайне редко применимая в реальной жизни. Путь становления специалиста же, чаще всего, завязан на самообучении и часах проведенных в гугле, ютубе и разного рода профильных курсах. Ну что поделаешь, живем мы...","link":"https://vc.ru/hr/649790-seychas-ya-tebe-vse-obyasnyu-synok-ili-zachem-mentorstvo-mentoru"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_07","title":"Не HH.RU единым: где и как найти работу в 2023.","date":"апрель 03, 2023","preview":"Как ясно из названия, сегодня я расскажу вам о том, как и где можно и нужно искать работу. Сразу в начале статьи договоримся, что про агрегаторы вакансий как место поиска я вам рассказывать не буду, но советы о том, как с ними работать, будут. Просто к сведению обмолвимся о них тут - hh.ru, career.habr.com, grintern.ru Тут, в основном....","link":"https://vc.ru/u/1578780-vladislav-sannikov-x-ypa/654425-ne-hh-ru-edinym-gde-i-kak-nayti-rabotu-v-2023"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_08","title":"«Нам нужен сотрудник!» Как компании выстроить найм. Осторожно — лонгрид.","date":"апрель 05, 2023","preview":'Масштабирование компании дело непростое. Не секрет, что скорость и качество развития компании очень сильно зависит от людей, которые в ней работают. Нельзя взять любого человека с улицы и доверить ему работу, от которой зависит жизнеспособность проекта. В сегодняшней статье я на нескольких примерах, извините, но обезличенных...',"link":"https://vc.ru/u/1578780-vladislav-sannikov-x-ypa/656681-nam-nuzhen-sotrudnik-kak-kompanii-vystroit-naym-ostorozhno-longrid"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_09","title":"Я устал, я мухожук: принять решение об увольнении и сообщить об этом.","date":"апрель 07, 2023","preview":"Порой в жизни настает момент, когда солнце уже не так ярко светит, люди которые раньше вызывали улыбку, теперь становятся причиной нервного тика, а вода из куллера отдает несбывшимися мечтами о блистательной карьере. Грустно, конечно, но поверьте, увольнение в данной ситуации — один из немногих выходов из ситуации...","link":"https://vc.ru/hr/658915-ya-ustal-ya-muhozhuk-kak-prinyat-reshenie-ob-uvolnenii-i-soobshchit-ob-etom-rukovodstvu"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_10","title":"«Я боюсь собеседований»: как подготовиться и не испытывать страх.","date":"апрель 10, 2023","preview":"Если Вы получили приглашение на собеседование, то я вас уже могу поздравить с первым небольшим — вас и ваше резюме оценили и компания первично вами заинтересовалась. Но расслабляться рано! Напоминаю, что факт назначенного собеседования еще не означает, что вы уже приступаете к работе. По статистике из разных...","link":"https://vc.ru/hr/661287-ya-ochen-boyus-sobesedovaniy-kak-podgotovitsya-k-sobesedovaniyu-i-ne-ispytyvat-strah-pered-intervyu"})
+                        @@include('components/cards/_blog-card.html',{"image":"blog_11","title":"«Я хуже всех!!», или надежные способы избавиться от синдрома самозванца.","date":"апрель 12, 2023","preview":"«Синдром Самозванца» – состояние человека, при котором он находится в постоянном сомнении в своих успехах, достижениях, профессиональной компетентности. Ему кажется, что все его жизненные удачи – это результат действий окружающих, благоприятного стечения обстоятельств, везения. Согласно статистике, более 70%...","link":"https://vc.ru/u/1578780-vladislav-sannikov-x-ypa/663974-ya-huzhe-vseh-ili-nadezhnye-sposoby-izbavitsya-ot-sindroma-samozvanca"})
+                    </div>
+                    <div class="blog__nav">
+                        <div class="swiper-button-prev swiper-button-prev-blog blog__nav-prev blog__nav-arrow">
+                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M0.820312 13.1742L0.820313 1.43192L12.5626 1.43192" stroke="#1D1D1D"/>
+                                    <path d="M0.820313 1.43192L12.5626 13.1742" stroke="#1D1D1D"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next-blog blog__nav-next blog__nav-arrow">
+                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M12.1797 13.1742V1.43192H0.437416" stroke="#1D1D1D"/>
+                                    <path d="M12.1797 1.43192L0.437416 13.1742" stroke="#1D1D1D"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <a href="https://vc.ru/u/1578780-vladislav-sannikov-x-ypa" target="_blank" class="blog-slide__vc blog-slide__vc-mob link secondary">
+                        VC.RU
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.22949H11.5V12.2295" stroke="#1D1D1D"/>
+                            <path d="M11.5 1.22949L0.5 12.2295" stroke="#1D1D1D"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="contacts__marquee running-swiper">
+                    <div class="contacts__marquee-wrapper swiper-wrapper">
+                        @@include('components/cards/_marquee-part.html')
+                        @@include('components/cards/_marquee-part.html')
+                        @@include('components/cards/_marquee-part.html')
+                    </div>
+                </div>
+                <div class="contacts__inner container">
+                    <p class="contacts__title">
+                        <span>WANT TO HAVE</span>
+                        <span><img class="contacts__img" src="img/contacts.png" alt="YPA Tech Founder"> a talk?;)</span>
+                    </p>
+                    <form class="form contacts__form" action="" method="post" id="form">
+                        <label class="form__label">
+                            <input class="form__input form__input-dark" type="text" placeholder="Имя" id="name" name="name">
+                        </label>
+                        <label class="form__label">
+                            <input class="form__input form__input-dark" type="email" placeholder="E-mail" id="email" name="email">
+                        </label>
+                        <label class="form__label">
+                            <input class="form__input form__input-dark" type="tel" placeholder="Телефон" id="phone" name="phone">
+                        </label>
+                        <button class="modal__btn button button__dark" id="submit" type="submit">
+                            <span>Оставить заявку</span>
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer">
+                    @@include('components/page-blocks/_footer.html')
+                </footer>
+            </section>
+        </main>
+    </div>
+    @@include('components/_popup-form.html')
+    @@include('components/_popup-success.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+</html>

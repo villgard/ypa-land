@@ -1,0 +1,207 @@
+.team {
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  &__subtitle {
+    margin-left: auto;
+    margin-bottom: 70px;
+    max-width: 1116px;
+  }
+  &__caption {
+    max-width: 536px;
+    @include text_main;
+    margin: 0 294px 70px auto;
+    opacity: .9;
+  }
+  &__slider {
+    position: relative;
+    .swiper-wrapper {
+      width: min-content;
+    }
+  }
+
+  &-slide {
+    max-width: 264px;
+    width: 100%;
+    display: none;
+    visibility: hidden;
+
+    &__name {
+      @include title_4;
+      margin-bottom: 7px;
+    }
+
+    &__img {
+      max-width: 264px;
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+        border-radius: 40px;
+      }
+    }
+
+    &__position {
+      text-transform: uppercase;
+      @include text_caption;
+      opacity: 0.5;
+    }
+
+    &__quote {
+      max-width: 264px;
+      visibility: hidden;
+      @include text_small;
+    }
+
+    &.swiper-slide-active {
+      max-width: 833px;
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+      display: flex;
+      gap: 20px;
+
+      .team-slide__img {
+        max-width: 548px;
+      }
+
+      .team-slide__quote {
+        visibility: visible;
+        opacity: 0.7;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .team {
+    margin-bottom: 564px;
+
+    .swiper-pagination {
+      width: 0;
+      display: none;
+      visibility: hidden;
+    }
+    &__subtitle {
+      max-width: 491px;
+      margin-left: auto;
+      margin-bottom: 25px;
+      span {
+        display: block;
+      }
+    }
+    &__slider {
+      position: absolute;
+      overflow: hidden;
+    }
+    &__caption {
+      margin-right: 0;
+      margin-bottom: 35px;
+      max-width: 389px;
+    }
+    &-slide {
+      visibility: visible;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 393px;
+      width: 100%;
+
+      &.swiper-slide-active {
+        max-width: 393px;
+      }
+
+      &__img {
+        max-width: 393px;
+        margin-bottom: 15px;
+
+        img {
+          border-radius: 25px;
+        }
+      }
+      &__name {
+        max-width: 185px;
+        margin-left: 15px;
+      }
+      &__position {
+        max-width: 185px;
+        margin-left: 15px;
+      }
+      .team-slide__quote {
+        visibility: visible;
+        opacity: .7;
+      }
+
+      &__quote {
+        position: absolute;
+        top: 408px;
+        right: 40px;
+        max-width: 147px;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .team {
+    margin-bottom: 484px;
+    &__title {
+      left: 10px;
+    }
+    &__slider {
+      .swiper-wrapper {
+        width: 100%;
+      }
+    }
+
+    &__subtitle {
+      max-width: 280px;
+      margin-left: auto;
+      margin-bottom: 20px;
+
+    }
+    &__caption {
+      margin: 0 auto 30px;
+    }
+
+    &-slide {
+      gap: 10px;
+      max-width: 325px;
+      width: 100%;
+
+      &.swiper-slide-active {
+        min-width: 325px;
+        .team-slide__img {
+          //max-width: 325px;
+        }
+      }
+      &__img {
+        width: 100%;
+        min-width: 325px;
+        margin-bottom: 10px;
+        img {
+          border-radius: 20px;
+        }
+      }
+      &__name {
+        margin-left: 12px;
+      }
+      &__position {
+        margin-left: 12px;
+      }
+      &__quote {
+        max-width: 77%;
+        position: static;
+        margin-left: 12px;
+      }
+    }
+  }
+}

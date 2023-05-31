@@ -1,0 +1,70 @@
+@keyframes spin {
+  0% {
+    top: -44px;
+    right: 215px;
+  }
+  25% {
+    top: 0;
+    right: 303px;
+  }
+  50% {
+    top: 55px;
+    right: 206px;
+  }
+  75% {
+    top: 6px;
+    right: 105px;
+  }
+  100% {
+    top: -44px;
+    right: 215px;
+  }
+}
+
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes spin-tablet {
+  0% {
+    top: 307px;
+    right: 0;
+  }
+  33% {
+    top: 158px;
+    right: 26px;
+  }
+  66% {
+    top: 243px;
+    right: 88px;
+  }
+  100% {
+    top: 307px;
+    right: 0;
+  }
+}
+
+@keyframes spin-mob {
+  0% {
+    top: 169px;
+    right: 0;
+  }
+  33% {
+    top: 85px;
+    right: 5px;
+  }
+  66% {
+    top: 135px;
+    right: 31px;
+  }
+  100% {
+    top: 169px;
+    right: 0;
+  }
+}
