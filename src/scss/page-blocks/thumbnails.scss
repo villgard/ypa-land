@@ -3,16 +3,11 @@
     position: relative;
   }
   &-thumbnails {
-    position: absolute;
     overflow: hidden;
-    top: 550px;
-    left: 852px;
-    max-width: 1116px;
-    width: 100%;
     display: flex;
   }
   
-  .swiper-slide-thumb {
+  .swiper-slide {
     cursor: pointer;
     transition: all .4s;
 

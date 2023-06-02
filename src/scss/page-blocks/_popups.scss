@@ -10,6 +10,9 @@
     z-index: 80;
     opacity: 0;
     pointer-events: none;
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
     &__bg {
         display: none;
         position: fixed;
@@ -143,7 +146,7 @@
 @media screen and (max-width: 639px) {
     .modal {
         &__dialog {
-            top: 130px;
+            top: 90px;
             left: 0;
         }
         &__inner {
@@ -160,7 +163,7 @@
             max-width: 182px;
         }
         &__close {
-            top: 82px;
+            top: 42px;
             width: 38px;
         }
         &__form {

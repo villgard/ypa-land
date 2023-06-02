@@ -12,7 +12,6 @@ function zoomer() {
     result.viewport = 1440;
   }
 
-
   return result;
 }
 const { viewport } = zoomer();

@@ -12,6 +12,7 @@ const formModal = document.querySelector('.js-modal-form');
 
 const formData = new FormData();
 
+
 function checkSubmit(name, email, phone, btn) {
   if (!name.value || !email.value || !phone.value) {
     btn.setAttribute('disabled', '');
@@ -185,6 +186,9 @@ async function sendForm(e, form) {
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
+  [inputPhone, inputModalPhone].forEach((input) => input.type = window.innerWidth > 992 ? 'number' : 'tel');
+
+
   checkSubmit(inputName, inputEmail, inputPhone, submitFormBtn);
   form.addEventListener('input', () => {
     checkSubmit(inputName, inputEmail, inputPhone, submitFormBtn);

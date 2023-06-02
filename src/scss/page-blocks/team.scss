@@ -17,11 +17,14 @@
     margin: 0 294px 70px auto;
     opacity: .9;
   }
+  &__sliders {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
   &__slider {
+    flex: 1 0 833px;
     position: relative;
-    .swiper-wrapper {
-      width: min-content;
-    }
   }
 
   &-slide {
@@ -178,14 +181,11 @@
       width: 100%;
 
       &.swiper-slide-active {
-        min-width: 325px;
         .team-slide__img {
-          //max-width: 325px;
+          max-width: 325px;
         }
       }
       &__img {
-        width: 100%;
-        min-width: 325px;
         margin-bottom: 10px;
         img {
           border-radius: 20px;

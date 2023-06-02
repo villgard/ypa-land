@@ -6,14 +6,14 @@ let navLinks = document.querySelectorAll(".nav__link")
 if (burger) {
     burger.onclick = function() {
         header.classList.toggle("_open")
-        body.classList.toggle("fixed-body")
+        body.classList.toggle("_fixed")
     }
 }
 
 navLinks.forEach(link => {
     link.onclick = function(){
         header.classList.remove("_open")
-        body.classList.remove("fixed-body")
+        body.classList.remove("_fixed")
     }
 })
 

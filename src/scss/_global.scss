@@ -6,6 +6,7 @@ html {
 }
 
 .wrapper {
+    overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,12 +20,12 @@ html {
 }
 
 .page {
-    overflow-x: hidden;
     color: $black;
     background: $grey;
-    &.fixed-body {
-        overflow-y: hidden;
-    }
+}
+
+._fixed {
+    overflow-y: hidden;
 }
 
 .container {

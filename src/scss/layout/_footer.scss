@@ -43,9 +43,6 @@
     & + & {
       margin-top: 15px;
     }
-    span {
-
-    }
     a {
       opacity: .6;
       &:hover {
@@ -100,8 +97,10 @@
 }
 
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 639px){
   .footer{
+    padding-bottom: env(safe-area-inset-bottom);
+
     &__logo {
       margin-bottom: 25px;
     }
