@@ -235,3 +235,7 @@ function animateFeedback() {
         }
     })
 }
+
+nodeMarquee({
+    parent: '#marquee-simple',
+});

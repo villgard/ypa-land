@@ -6,16 +6,8 @@
     left: 853px;
     top: 0;
     width: 1116px;
-    .swiper-slide {
-      &-active {
-
-      }
-    }
   }
   
-
-
-
   &-thumbnail {
     cursor: pointer;
     max-width: 264px;
@@ -59,6 +51,5 @@
   .team__slider-thumbnails {
     visibility: hidden;
     display: none;
-    left: 20px;
   }
 }

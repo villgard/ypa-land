@@ -1,6 +1,7 @@
 const plugins = [
     'node_modules/swiper/swiper-bundle.js',
     'src/libs/js/gsap.min.js',
+    'src/libs/js/node-marquee.min.js',
     'src/libs/js/ScrollTrigger.min.js',
     'src/libs/js/ScrollToPlugin.min.js',
 ];
