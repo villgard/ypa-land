@@ -1,34 +1,32 @@
 .team__slider {
-  &-wrapper {
-    position: relative;
-  }
   &-thumbnails {
     overflow: hidden;
     display: flex;
-  }
-  
-  .swiper-slide {
-    cursor: pointer;
-    transition: all .4s;
+    position: absolute;
+    left: 853px;
+    top: 0;
+    width: 1116px;
+    .swiper-slide {
+      &-active {
 
-    &-active {
-      opacity: 0;
-      max-width: 0;
+      }
     }
   }
+  
+
 
 
   &-thumbnail {
+    cursor: pointer;
     max-width: 264px;
-    height: 325px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
     background: transparent;
     opacity: 1;
     user-select: none;
-
+    transition: all .8s;
     &-name {
       @include title_4;
       margin-bottom: 7px;
@@ -45,11 +43,16 @@
       margin-bottom: 20px;
 
       img {
-        width: 100%;
+        max-width: 265px;
         border-radius: 40px;
       }
     }
- }
+    &.swiper-slide-active {
+      max-width: 0;
+      margin-right: 0 !important;
+      opacity: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {

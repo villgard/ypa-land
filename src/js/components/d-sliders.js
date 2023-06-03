@@ -1,3 +1,6 @@
+const teamSlides = document.querySelectorAll('.team-slide');
+
+
 const mainSlider = new Swiper(".js-swiper-team", {
     initialSlide: 0,
     spaceBetween: 20,
@@ -18,7 +21,6 @@ const mainSlider = new Swiper(".js-swiper-team", {
 
 const thumbnailsSlider = new Swiper(".js-swiper-thumbnails", {
     slidesPerView: 4,
-    loopedSlides: 5,
     spaceBetween: 20,
     loop: true,
     effect: "slide",
@@ -27,12 +29,29 @@ const thumbnailsSlider = new Swiper(".js-swiper-thumbnails", {
     clickable: true,
     initialSlide: 0,
     on: {
-        slideChange: function() {
-            mainSlider.slideTo(this.activeIndex);
-            console.log(mainSlider.activeIndex);
+        init: function () {
+        },
+        slideChange: function () {
+            this.slides.forEach(slide => {
+                if (slide.activeIndex < this.realIndex) {
+                    slide.classList.add('_hidden');
+                } else {
+                    slide.classList.remove('_hidden');
+                }
+            })
+            mainSlider.slideTo(this.realIndex % 5, 400, true);
+            // teamSlides.forEach((slide, i) => {
+            //   if (this.realIndex % 5 === i) {
+            //       slide.classList.add('_active');
+            //   } else {
+            //       slide.classList.remove('_active');
+            //   }
+            // });
         }
     }
 });
+
+
 
 function blogSwiper() {
     let blogSwiper = new Swiper('.js-swiper-blog', {
