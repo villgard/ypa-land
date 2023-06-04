@@ -10,7 +10,8 @@
     max-width: 1176px;
     height: 555px;
     margin-bottom: 45px;
-    margin-left: auto;
+    margin-inline: auto;
+
     p {
       &:nth-child(1) {
         bottom: 0;
@@ -56,7 +57,7 @@
   }
   &__list {
     max-width: 1118px;
-    margin-left: auto;
+    margin-inline: auto;
     display: flex;
     gap: 22px;
   }

@@ -31,7 +31,6 @@ const thumbnailsSlider = new Swiper(".js-swiper-thumbnails", {
     initialSlide: 0,
     on: {
         slideChange: function () {
-            console.log(this);
             mainSlider.slideTo(this.realIndex % 5, 400, true);
         }
     }

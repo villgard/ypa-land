@@ -158,8 +158,8 @@ async function sendForm(e, form) {
 
   submittingForm(form);
 
-  const token = '6197694453:AAGpGVSQBlyFEBAEWAimnCKEofdzujQegsY';
-  const chatId = '-907938655';
+  const token = '6281700299:AAEfcHIwnGxZ77_JwnPKgqkBOh4apb2f2A8';
+  const chatId = '-924009059';
 
   const asString = new URLSearchParams(formData).toString();
   const headerMessage = 'Заявка с ypacrew.tech %0A';
